@@ -1,1 +1,104 @@
-# Clean-search
+# Clean-search<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clean Search</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    body {
+      text-align: center;
+    }
+    .search-box {
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+    .features {
+      margin-top: 3rem;
+    }
+    .features article {
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      margin-top: 4rem;
+      padding: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Clean Search</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#subscribe">Join Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="search-box">
+      <h1>Clean Search</h1>
+      <h3>Search without being searched</h3>
+      <form>
+        <input type="text" placeholder="Type your search..." aria-label="Search" required>
+        <button type="submit" onclick="event.preventDefault()">Search</button>
+      </form>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features grid">
+      <article>
+        <h3>🔐 Privacy First</h3>
+        <p>No tracking. No data selling. Ever.</p>
+      </article>
+      <article>
+        <h3>⚡ Fast & Simple</h3>
+        <p>Lightning speed, clean design, zero ads.</p>
+      </article>
+      <article>
+        <h3>🧠 AI-First Answers</h3>
+        <p>Smart results with direct summaries.</p>
+      </article>
+      <article>
+        <h3>🌍 Local Focus</h3>
+        <p>Search in your language, tailored for your region.</p>
+      </article>
+      <article>
+        <h3>🤝 Community Powered</h3>
+        <p>Ranked by people, not hidden algorithms.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Subscribe Section -->
+  <section id="subscribe" aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Join the Movement</h2>
+          <h3>Be part of the search revolution</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="First name" aria-label="First name" required>
+          <input type="email" id="email" name="email" placeholder="Email address" aria-label="Email address" required>
+          <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <small>
+      <a href="#">About</a> • <a href="#">Privacy</a> • <a href="#">Contact</a>
+    </small>
+  </footer>
+
+</body>
+</html>
